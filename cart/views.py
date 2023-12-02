@@ -6,6 +6,7 @@ from django.conf import settings
 import stripe
 from order.models import Order, OrderItem
 
+
 def _cart_id(request):
     cart = request.session.session_key
     if not cart:
@@ -88,8 +89,7 @@ def cart_detail(request, total=0, counter=0, cart_items = None):
                     order_item.quantity)
                     products.save()
                     order_item.delete()
-                    '''The terminal will print this message when the order is
-                    saved'''
+                    '''The terminal will print this message when the order is saved'''
                     print('The order has been created')
                 return redirect ('order:thanks', order_details.id) 
             except ObjectDoesNotExist:
