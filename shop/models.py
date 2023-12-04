@@ -1,6 +1,7 @@
 from django.db import models
 import uuid
 from django.urls import reverse
+from PIL import Image
 
 class Category(models.Model):
     id = models.UUIDField(
@@ -47,3 +48,4 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    

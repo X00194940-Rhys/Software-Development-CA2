@@ -3,12 +3,17 @@
     letter-spacing: .2em;
     font-size: 14px;
     text-transform: uppercase;
+    border-radius: 20px;
 }
 
 .dropdown-item {
     font-size: 14px;
     letter-spacing: .2em;
     text-transform: uppercase;
+}
+
+.header {
+    color: #3A8D90;
 }
 
 /****Footer****/
@@ -65,6 +70,7 @@
 }
 
 /****Product Page****/
+
 .my_prod_row_class {
     padding-top: 15px;
     padding-bottom: 20px;
