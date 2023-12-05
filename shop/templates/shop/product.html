@@ -24,6 +24,11 @@
                         <h1 class="my_prod_title">{{product.name}}</h1>
                         <p>€{{product.price}}</p>
                         <p class="my_title">Per Meter</p>
+    	            <!--<p>Required Length (m)  {{cart_item.quantity}}
+                        <td>
+                            <a href="{% url 'cart:add_cart' product.id %}" class="custom_a"><i class="fas fa-plus-circle custom_icon"></i></a>&nbsp;
+                            <a href="{% url 'cart:cart_remove' product.id %}" class="custom_a"><i class="fas fa-minus-circle custom_icon"></i></a>&nbsp;
+                        </td></p>-->
                         <p class="text-justify my_prod_text">{{product.description}}</p>
                         {% if product.stock == 0%}
                             <p class="text-justify my_prod_text"><b>Out of Stock</b></p>
